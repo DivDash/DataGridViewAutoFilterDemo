@@ -44,24 +44,11 @@ namespace DataGridViewAutoFilterDemo.Views
             this.FilterStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.ShowAllLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.dataGridView = new System.Windows.Forms.DataGridView();
-            this.rankDataGridViewColumn = new DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn();
-            this.occupationDataGridViewColumn = new DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn();
-            this.jobDataGridViewColumn = new DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn();
-            this.salaryDataGridViewColumn = new DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn();
-            this.rateDataGridViewColumn = new DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn();
-            this.dateTimeDataGridViewColumn = new DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn();
-            this.personBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.statusStrip2 = new System.Windows.Forms.StatusStrip();
             this.MetroFilterStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.MetroShowAllLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.metroGrid = new MetroFramework.Controls.MetroGrid();
-            this.rankColumn = new DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn();
-            this.occupationColumn = new DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn();
-            this.jobColumn = new DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn();
-            this.salaryColumn = new DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn();
-            this.rateColumn = new DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn();
-            this.dateTimeColumn = new DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
             this.VersionLabel = new MaterialSkin.Controls.MaterialLabel();
@@ -73,11 +60,23 @@ namespace DataGridViewAutoFilterDemo.Views
             this.materialLabel7 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel11 = new MaterialSkin.Controls.MaterialLabel();
             this.menuIconList = new System.Windows.Forms.ImageList(this.components);
+            this.rankDataGridViewColumn = new DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn();
+            this.occupationDataGridViewColumn = new DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn();
+            this.jobDataGridViewColumn = new DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn();
+            this.salaryDataGridViewColumn = new DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn();
+            this.rateDataGridViewColumn = new DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn();
+            this.dateTimeDataGridViewColumn = new DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn();
+            this.personBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.rankColumn = new DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn();
+            this.occupationColumn = new DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn();
+            this.jobColumn = new DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn();
+            this.salaryColumn = new DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn();
+            this.rateColumn = new DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn();
+            this.dateTimeColumn = new DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn();
             this.materialTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.personBindingSource)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.statusStrip2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid)).BeginInit();
@@ -85,6 +84,7 @@ namespace DataGridViewAutoFilterDemo.Views
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.personBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // materialTabControl1
@@ -173,64 +173,6 @@ namespace DataGridViewAutoFilterDemo.Views
             this.dataGridView.TabIndex = 7;
             this.dataGridView.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.DataGridView_DataBindingComplete);
             this.dataGridView.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DataGridView_KeyDown);
-            // 
-            // rankDataGridViewColumn
-            // 
-            this.rankDataGridViewColumn.DataPropertyName = "Rank";
-            this.rankDataGridViewColumn.FilteringEnabled = false;
-            this.rankDataGridViewColumn.HeaderText = "Rank";
-            this.rankDataGridViewColumn.Name = "rankDataGridViewColumn";
-            this.rankDataGridViewColumn.ReadOnly = true;
-            this.rankDataGridViewColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // occupationDataGridViewColumn
-            // 
-            this.occupationDataGridViewColumn.DataPropertyName = "Occupation";
-            this.occupationDataGridViewColumn.FilteringEnabled = false;
-            this.occupationDataGridViewColumn.HeaderText = "Occupation";
-            this.occupationDataGridViewColumn.Name = "occupationDataGridViewColumn";
-            this.occupationDataGridViewColumn.ReadOnly = true;
-            this.occupationDataGridViewColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // jobDataGridViewColumn
-            // 
-            this.jobDataGridViewColumn.DataPropertyName = "Jobs";
-            this.jobDataGridViewColumn.FilteringEnabled = false;
-            this.jobDataGridViewColumn.HeaderText = "Job";
-            this.jobDataGridViewColumn.Name = "jobDataGridViewColumn";
-            this.jobDataGridViewColumn.ReadOnly = true;
-            this.jobDataGridViewColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // salaryDataGridViewColumn
-            // 
-            this.salaryDataGridViewColumn.DataPropertyName = "Salary";
-            this.salaryDataGridViewColumn.FilteringEnabled = false;
-            this.salaryDataGridViewColumn.HeaderText = "Salary";
-            this.salaryDataGridViewColumn.Name = "salaryDataGridViewColumn";
-            this.salaryDataGridViewColumn.ReadOnly = true;
-            this.salaryDataGridViewColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // rateDataGridViewColumn
-            // 
-            this.rateDataGridViewColumn.DataPropertyName = "Rate";
-            this.rateDataGridViewColumn.FilteringEnabled = false;
-            this.rateDataGridViewColumn.HeaderText = "Rate";
-            this.rateDataGridViewColumn.Name = "rateDataGridViewColumn";
-            this.rateDataGridViewColumn.ReadOnly = true;
-            this.rateDataGridViewColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // dateTimeDataGridViewColumn
-            // 
-            this.dateTimeDataGridViewColumn.DataPropertyName = "DateTime";
-            this.dateTimeDataGridViewColumn.FilteringEnabled = false;
-            this.dateTimeDataGridViewColumn.HeaderText = "Date";
-            this.dateTimeDataGridViewColumn.Name = "dateTimeDataGridViewColumn";
-            this.dateTimeDataGridViewColumn.ReadOnly = true;
-            this.dateTimeDataGridViewColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // personBindingSource
-            // 
-            this.personBindingSource.DataSource = typeof(DataGridViewAutoFilterDemo.Person);
             // 
             // tabPage2
             // 
@@ -341,60 +283,6 @@ namespace DataGridViewAutoFilterDemo.Views
             this.metroGrid.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.MetroGrid_DataBindingComplete);
             this.metroGrid.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MetroGrid_KeyDown);
             // 
-            // rankColumn
-            // 
-            this.rankColumn.DataPropertyName = "Rank";
-            this.rankColumn.FilteringEnabled = false;
-            this.rankColumn.HeaderText = "Rank";
-            this.rankColumn.Name = "rankColumn";
-            this.rankColumn.ReadOnly = true;
-            this.rankColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // occupationColumn
-            // 
-            this.occupationColumn.DataPropertyName = "Occupation";
-            this.occupationColumn.FilteringEnabled = false;
-            this.occupationColumn.HeaderText = "Occupation";
-            this.occupationColumn.Name = "occupationColumn";
-            this.occupationColumn.ReadOnly = true;
-            this.occupationColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // jobColumn
-            // 
-            this.jobColumn.DataPropertyName = "Jobs";
-            this.jobColumn.FilteringEnabled = false;
-            this.jobColumn.HeaderText = "Jobs";
-            this.jobColumn.Name = "jobColumn";
-            this.jobColumn.ReadOnly = true;
-            this.jobColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // salaryColumn
-            // 
-            this.salaryColumn.DataPropertyName = "Salary";
-            this.salaryColumn.FilteringEnabled = false;
-            this.salaryColumn.HeaderText = "Salary";
-            this.salaryColumn.Name = "salaryColumn";
-            this.salaryColumn.ReadOnly = true;
-            this.salaryColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // rateColumn
-            // 
-            this.rateColumn.DataPropertyName = "Rate";
-            this.rateColumn.FilteringEnabled = false;
-            this.rateColumn.HeaderText = "Rate";
-            this.rateColumn.Name = "rateColumn";
-            this.rateColumn.ReadOnly = true;
-            this.rateColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // dateTimeColumn
-            // 
-            this.dateTimeColumn.DataPropertyName = "DateTime";
-            this.dateTimeColumn.FilteringEnabled = false;
-            this.dateTimeColumn.HeaderText = "Date";
-            this.dateTimeColumn.Name = "dateTimeColumn";
-            this.dateTimeColumn.ReadOnly = true;
-            this.dateTimeColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.panel1);
@@ -466,7 +354,7 @@ namespace DataGridViewAutoFilterDemo.Views
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Image = global::DataGridViewAutoFilterDemo.Properties.Resources.DataGridViewAutoFilter;
             this.pictureBox1.Location = new System.Drawing.Point(400, 7);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(167, 144);
@@ -535,6 +423,118 @@ namespace DataGridViewAutoFilterDemo.Views
             this.menuIconList.Images.SetKeyName(2, "report.png");
             this.menuIconList.Images.SetKeyName(3, "settings.png");
             // 
+            // rankDataGridViewColumn
+            // 
+            this.rankDataGridViewColumn.DataPropertyName = "Rank";
+            this.rankDataGridViewColumn.FilteringEnabled = false;
+            this.rankDataGridViewColumn.HeaderText = "Rank";
+            this.rankDataGridViewColumn.Name = "rankDataGridViewColumn";
+            this.rankDataGridViewColumn.ReadOnly = true;
+            this.rankDataGridViewColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // occupationDataGridViewColumn
+            // 
+            this.occupationDataGridViewColumn.DataPropertyName = "Occupation";
+            this.occupationDataGridViewColumn.FilteringEnabled = false;
+            this.occupationDataGridViewColumn.HeaderText = "Occupation";
+            this.occupationDataGridViewColumn.Name = "occupationDataGridViewColumn";
+            this.occupationDataGridViewColumn.ReadOnly = true;
+            this.occupationDataGridViewColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // jobDataGridViewColumn
+            // 
+            this.jobDataGridViewColumn.DataPropertyName = "Jobs";
+            this.jobDataGridViewColumn.FilteringEnabled = false;
+            this.jobDataGridViewColumn.HeaderText = "Job";
+            this.jobDataGridViewColumn.Name = "jobDataGridViewColumn";
+            this.jobDataGridViewColumn.ReadOnly = true;
+            this.jobDataGridViewColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // salaryDataGridViewColumn
+            // 
+            this.salaryDataGridViewColumn.DataPropertyName = "Salary";
+            this.salaryDataGridViewColumn.FilteringEnabled = false;
+            this.salaryDataGridViewColumn.HeaderText = "Salary";
+            this.salaryDataGridViewColumn.Name = "salaryDataGridViewColumn";
+            this.salaryDataGridViewColumn.ReadOnly = true;
+            this.salaryDataGridViewColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // rateDataGridViewColumn
+            // 
+            this.rateDataGridViewColumn.DataPropertyName = "Rate";
+            this.rateDataGridViewColumn.FilteringEnabled = false;
+            this.rateDataGridViewColumn.HeaderText = "Rate";
+            this.rateDataGridViewColumn.Name = "rateDataGridViewColumn";
+            this.rateDataGridViewColumn.ReadOnly = true;
+            this.rateDataGridViewColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // dateTimeDataGridViewColumn
+            // 
+            this.dateTimeDataGridViewColumn.DataPropertyName = "DateTime";
+            this.dateTimeDataGridViewColumn.FilteringEnabled = false;
+            this.dateTimeDataGridViewColumn.HeaderText = "Date";
+            this.dateTimeDataGridViewColumn.Name = "dateTimeDataGridViewColumn";
+            this.dateTimeDataGridViewColumn.ReadOnly = true;
+            this.dateTimeDataGridViewColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // personBindingSource
+            // 
+            this.personBindingSource.DataSource = typeof(DataGridViewAutoFilterDemo.Person);
+            // 
+            // rankColumn
+            // 
+            this.rankColumn.DataPropertyName = "Rank";
+            this.rankColumn.FilteringEnabled = false;
+            this.rankColumn.HeaderText = "Rank";
+            this.rankColumn.Name = "rankColumn";
+            this.rankColumn.ReadOnly = true;
+            this.rankColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // occupationColumn
+            // 
+            this.occupationColumn.DataPropertyName = "Occupation";
+            this.occupationColumn.FilteringEnabled = false;
+            this.occupationColumn.HeaderText = "Occupation";
+            this.occupationColumn.Name = "occupationColumn";
+            this.occupationColumn.ReadOnly = true;
+            this.occupationColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // jobColumn
+            // 
+            this.jobColumn.DataPropertyName = "Jobs";
+            this.jobColumn.FilteringEnabled = false;
+            this.jobColumn.HeaderText = "Jobs";
+            this.jobColumn.Name = "jobColumn";
+            this.jobColumn.ReadOnly = true;
+            this.jobColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // salaryColumn
+            // 
+            this.salaryColumn.DataPropertyName = "Salary";
+            this.salaryColumn.FilteringEnabled = false;
+            this.salaryColumn.HeaderText = "Salary";
+            this.salaryColumn.Name = "salaryColumn";
+            this.salaryColumn.ReadOnly = true;
+            this.salaryColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // rateColumn
+            // 
+            this.rateColumn.DataPropertyName = "Rate";
+            this.rateColumn.FilteringEnabled = false;
+            this.rateColumn.HeaderText = "Rate";
+            this.rateColumn.Name = "rateColumn";
+            this.rateColumn.ReadOnly = true;
+            this.rateColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // dateTimeColumn
+            // 
+            this.dateTimeColumn.DataPropertyName = "DateTime";
+            this.dateTimeColumn.FilteringEnabled = false;
+            this.dateTimeColumn.HeaderText = "Date";
+            this.dateTimeColumn.Name = "dateTimeColumn";
+            this.dateTimeColumn.ReadOnly = true;
+            this.dateTimeColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
             // MaterialDemoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -558,7 +558,6 @@ namespace DataGridViewAutoFilterDemo.Views
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.personBindingSource)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.statusStrip2.ResumeLayout(false);
@@ -570,6 +569,7 @@ namespace DataGridViewAutoFilterDemo.Views
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.personBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

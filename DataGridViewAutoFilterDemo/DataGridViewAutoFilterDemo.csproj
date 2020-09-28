@@ -158,13 +158,9 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\DataGridViewAutoFilter.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\DataGridViewAutoFilterIcon.ico" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="DataGridViewAutoFilterIcon.ico" />
+    <None Include="Resources\DataGridViewAutoFilter.png" />
+    <Content Include="Resources\DataGridViewAutoFilterIcon.ico" />
     <Content Include="Resources\TS.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
