@@ -72,6 +72,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\Person.cs" />
+    <Compile Include="Views\MetroAboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\MetroAboutBox.Designer.cs">
+      <DependentUpon>MetroAboutBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\AboutBox.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +110,9 @@
     <Compile Include="Views\MetroDemoForm.Designer.cs">
       <DependentUpon>MetroDemoForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\MetroAboutBox.resx">
+      <DependentUpon>MetroAboutBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\AboutBox.resx">
       <DependentUpon>AboutBox.cs</DependentUpon>
     </EmbeddedResource>
