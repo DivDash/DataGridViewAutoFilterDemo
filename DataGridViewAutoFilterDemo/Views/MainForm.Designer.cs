@@ -56,7 +56,7 @@
             this.button1.TabIndex = 1;
             this.button1.Text = "Basic Demo Form";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // metroButton1
             // 
@@ -67,7 +67,7 @@
             this.metroButton1.TabIndex = 2;
             this.metroButton1.Text = "Metro Demo Form";
             this.metroButton1.UseSelectable = true;
-            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
+            this.metroButton1.Click += new System.EventHandler(this.MetroButton1_Click);
             // 
             // materialButton1
             // 
@@ -88,7 +88,7 @@
             this.materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.materialButton1.UseAccentColor = false;
             this.materialButton1.UseVisualStyleBackColor = true;
-            this.materialButton1.Click += new System.EventHandler(this.materialButton1_Click);
+            this.materialButton1.Click += new System.EventHandler(this.MaterialButton1_Click);
             // 
             // MainForm
             // 

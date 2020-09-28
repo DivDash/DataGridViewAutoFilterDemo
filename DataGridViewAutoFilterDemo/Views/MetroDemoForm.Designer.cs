@@ -140,8 +140,8 @@
             this.metroGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.metroGrid.Size = new System.Drawing.Size(884, 577);
             this.metroGrid.TabIndex = 5;
-            this.metroGrid.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.MetroGrid1_DataBindingComplete);
-            this.metroGrid.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MetroGrid1_KeyDown);
+            this.metroGrid.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.MetroGrid_DataBindingComplete);
+            this.metroGrid.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MetroGrid_KeyDown);
             // 
             // aboutButton
             // 

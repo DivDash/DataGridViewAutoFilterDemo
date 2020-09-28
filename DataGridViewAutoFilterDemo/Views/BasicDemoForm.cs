@@ -15,22 +15,25 @@ namespace DataGridViewAutoFilterDemo.Views
         {
             InitializeComponent();
         }
-
         private void BasicDemoForm_Load(object sender, EventArgs e)
         {
             personObject.PopulateList(personList);
 
-            /// Use morelinq ToDataTable extension to convert personList to DataTable
-            /// Assign the converted Datatable to BindingSource's DataSource  
-            /// Finally assign this DataSource to DataGridView's DataSource
-
+            // Use morelinq ToDataTable extension for converting personList to DataTable.
+            // Assign the converted Datatable to BindingSource's DataSource.
             personBindingSource.DataSource = personList.ToDataTable();
 
+            //Finally assign personBindingSource to DataGridView's DataSource.
             dataGridView.DataSource = personBindingSource;
 
             //Allow data filtering 
             EnableGridFilter(true);
         }
+        /// <summary>
+        /// Enable filtering on grid columns by setting the value to true.
+        /// It's false by default.
+        /// </summary>
+        /// <param name="value"></param>
         private void EnableGridFilter(bool value)
         {
             rankColumn.FilteringEnabled = value;
@@ -40,7 +43,6 @@ namespace DataGridViewAutoFilterDemo.Views
             rateColumn.FilteringEnabled = value;
             dateTimeColumn.FilteringEnabled = value;
         }
-
         private void ShowAllLabel_Click(object sender, EventArgs e)
         {
             DataGridViewAutoFilterTextBoxColumn.RemoveFilter(dataGridView);
@@ -60,14 +62,6 @@ namespace DataGridViewAutoFilterDemo.Views
                 FilterStatusLabel.Text = filterStatus;
             }
         }
-        private void AboutToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            using (var aboutBox = new AboutBox())
-            {
-                aboutBox.ShowDialog();
-            }
-        }
-
         private void DataGridView_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.Alt
@@ -77,6 +71,13 @@ namespace DataGridViewAutoFilterDemo.Views
             {
                 filterCell.ShowDropDownList();
                 e.Handled = true;
+            }
+        }
+        private void AboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (var aboutBox = new AboutBox())
+            {
+                aboutBox.ShowDialog();
             }
         }
     }
