@@ -159,7 +159,7 @@
   <ItemGroup>
     <Content Include="DataGridViewAutoFilterIcon.ico" />
     <None Include="Resources\DataGridViewAutoFilter.png" />
-    <Content Include="Resources\DataGridViewAutoFilterIcon.ico" />
+    <None Include="Resources\DataGridViewAutoFilterIcon.ico" />
     <Content Include="Resources\TS.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
