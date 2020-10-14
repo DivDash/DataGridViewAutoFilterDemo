@@ -83,6 +83,16 @@ namespace DataGridViewAutoFilterDemo.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Github_128x128 {
+            get {
+                object obj = ResourceManager.GetObject("Github_128x128", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap TS {
             get {
                 object obj = ResourceManager.GetObject("TS", resourceCulture);

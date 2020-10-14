@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView = new System.Windows.Forms.DataGridView();
-            this.personBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.FilterStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.ShowAllLabel = new System.Windows.Forms.ToolStripStatusLabel();
@@ -42,10 +41,11 @@
             this.salaryColumn = new DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn();
             this.rateColumn = new DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn();
             this.dateTimeColumn = new DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn();
+            this.personBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.personBindingSource)).BeginInit();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.personBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView
@@ -73,10 +73,6 @@
             this.dataGridView.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.DataGridView_DataBindingComplete);
             this.dataGridView.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DataGridView_KeyDown);
             // 
-            // personBindingSource
-            // 
-            this.personBindingSource.DataSource = typeof(DataGridViewAutoFilterDemo.Person);
-            // 
             // statusStrip1
             // 
             this.statusStrip1.BackColor = System.Drawing.SystemColors.Control;
@@ -100,6 +96,7 @@
             // 
             // ShowAllLabel
             // 
+            this.ShowAllLabel.ActiveLinkColor = System.Drawing.Color.Blue;
             this.ShowAllLabel.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.ShowAllLabel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ShowAllLabel.IsLink = true;
@@ -182,6 +179,10 @@
             this.dateTimeColumn.ReadOnly = true;
             this.dateTimeColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             // 
+            // personBindingSource
+            // 
+            this.personBindingSource.DataSource = typeof(DataGridViewAutoFilterDemo.Person);
+            // 
             // BasicDemoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -198,11 +199,11 @@
             this.Text = "Basic Demo Form";
             this.Load += new System.EventHandler(this.BasicDemoForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.personBindingSource)).EndInit();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.personBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

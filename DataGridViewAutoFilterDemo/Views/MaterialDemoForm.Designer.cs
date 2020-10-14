@@ -34,9 +34,9 @@ namespace DataGridViewAutoFilterDemo.Views
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MaterialDemoForm));
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -51,12 +51,12 @@ namespace DataGridViewAutoFilterDemo.Views
             this.metroGrid = new MetroFramework.Controls.MetroGrid();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.VersionLabel = new MaterialSkin.Controls.MaterialLabel();
-            this.LinkLabel = new MaterialSkin.Controls.MaterialLabel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.GitSiteLabel = new MaterialSkin.Controls.MaterialLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel12 = new MaterialSkin.Controls.MaterialLabel();
+            this.VersionLabel = new MaterialSkin.Controls.MaterialLabel();
+            this.TelicSiteLabel = new MaterialSkin.Controls.MaterialLabel();
+            this.telicBox = new System.Windows.Forms.PictureBox();
+            this.iconBox = new System.Windows.Forms.PictureBox();
             this.materialLabel7 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel11 = new MaterialSkin.Controls.MaterialLabel();
             this.menuIconList = new System.Windows.Forms.ImageList(this.components);
@@ -82,8 +82,9 @@ namespace DataGridViewAutoFilterDemo.Views
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.telicBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.personBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -235,14 +236,14 @@ namespace DataGridViewAutoFilterDemo.Views
             this.metroGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.metroGrid.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
             this.metroGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.metroGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.metroGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.metroGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.metroGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.rankColumn,
@@ -252,14 +253,14 @@ namespace DataGridViewAutoFilterDemo.Views
             this.rateColumn,
             this.dateTimeColumn});
             this.metroGrid.DataSource = this.personBindingSource;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.metroGrid.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.metroGrid.DefaultCellStyle = dataGridViewCellStyle8;
             this.metroGrid.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroGrid.EnableHeadersVisualStyles = false;
             this.metroGrid.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -268,14 +269,14 @@ namespace DataGridViewAutoFilterDemo.Views
             this.metroGrid.Name = "metroGrid";
             this.metroGrid.ReadOnly = true;
             this.metroGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.metroGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.metroGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.metroGrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.metroGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.metroGrid.Size = new System.Drawing.Size(1009, 512);
@@ -297,104 +298,112 @@ namespace DataGridViewAutoFilterDemo.Views
             // 
             // panel1
             // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.AutoSize = true;
-            this.panel1.Controls.Add(this.VersionLabel);
-            this.panel1.Controls.Add(this.LinkLabel);
-            this.panel1.Controls.Add(this.pictureBox3);
+            this.panel1.Controls.Add(this.GitSiteLabel);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.materialLabel2);
-            this.panel1.Controls.Add(this.materialLabel12);
+            this.panel1.Controls.Add(this.VersionLabel);
+            this.panel1.Controls.Add(this.TelicSiteLabel);
+            this.panel1.Controls.Add(this.telicBox);
+            this.panel1.Controls.Add(this.iconBox);
             this.panel1.Controls.Add(this.materialLabel7);
             this.panel1.Controls.Add(this.materialLabel11);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1009, 512);
             this.panel1.TabIndex = 19;
             // 
+            // GitSiteLabel
+            // 
+            this.GitSiteLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.GitSiteLabel.AutoSize = true;
+            this.GitSiteLabel.Depth = 0;
+            this.GitSiteLabel.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.GitSiteLabel.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
+            this.GitSiteLabel.Location = new System.Drawing.Point(135, 426);
+            this.GitSiteLabel.MouseState = MaterialSkin.MouseState.HOVER;
+            this.GitSiteLabel.Name = "GitSiteLabel";
+            this.GitSiteLabel.Size = new System.Drawing.Size(288, 17);
+            this.GitSiteLabel.TabIndex = 20;
+            this.GitSiteLabel.Text = "telic-solutions/DataGridViewAutoFilterDemo";
+            this.GitSiteLabel.Click += new System.EventHandler(this.GitLabel_Click);
+            this.GitSiteLabel.MouseEnter += new System.EventHandler(this.GitLabel_MouseEnter);
+            this.GitSiteLabel.MouseLeave += new System.EventHandler(this.GitLabel_MouseLeave);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.Image = global::DataGridViewAutoFilterDemo.Properties.Resources.Github_128x128;
+            this.pictureBox1.Location = new System.Drawing.Point(26, 385);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(103, 93);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 19;
+            this.pictureBox1.TabStop = false;
+            // 
             // VersionLabel
             // 
+            this.VersionLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.VersionLabel.AutoSize = true;
             this.VersionLabel.BackColor = System.Drawing.Color.White;
             this.VersionLabel.Depth = 0;
             this.VersionLabel.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.VersionLabel.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
-            this.VersionLabel.Location = new System.Drawing.Point(788, 209);
+            this.VersionLabel.Location = new System.Drawing.Point(788, 205);
             this.VersionLabel.MouseState = MaterialSkin.MouseState.HOVER;
             this.VersionLabel.Name = "VersionLabel";
             this.VersionLabel.Size = new System.Drawing.Size(69, 24);
             this.VersionLabel.TabIndex = 18;
             this.VersionLabel.Text = "Version";
             // 
-            // LinkLabel
+            // TelicSiteLabel
             // 
-            this.LinkLabel.AutoSize = true;
-            this.LinkLabel.Depth = 0;
-            this.LinkLabel.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.LinkLabel.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
-            this.LinkLabel.Location = new System.Drawing.Point(786, 357);
-            this.LinkLabel.MouseState = MaterialSkin.MouseState.HOVER;
-            this.LinkLabel.Name = "LinkLabel";
-            this.LinkLabel.Size = new System.Drawing.Size(98, 17);
-            this.LinkLabel.TabIndex = 17;
-            this.LinkLabel.Text = "A PRODUCT OF";
-            this.LinkLabel.Click += new System.EventHandler(this.LinkLabel_Click);
-            this.LinkLabel.MouseEnter += new System.EventHandler(this.LinkLabel_MouseEnter);
-            this.LinkLabel.MouseLeave += new System.EventHandler(this.LinkLabel_MouseLeave);
+            this.TelicSiteLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TelicSiteLabel.AutoSize = true;
+            this.TelicSiteLabel.Depth = 0;
+            this.TelicSiteLabel.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.TelicSiteLabel.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle2;
+            this.TelicSiteLabel.ForeColor = System.Drawing.Color.Black;
+            this.TelicSiteLabel.Location = new System.Drawing.Point(793, 381);
+            this.TelicSiteLabel.MouseState = MaterialSkin.MouseState.HOVER;
+            this.TelicSiteLabel.Name = "TelicSiteLabel";
+            this.TelicSiteLabel.Size = new System.Drawing.Size(98, 17);
+            this.TelicSiteLabel.TabIndex = 17;
+            this.TelicSiteLabel.Text = "A PRODUCT OF";
+            this.TelicSiteLabel.Click += new System.EventHandler(this.LinkLabel_Click);
+            this.TelicSiteLabel.MouseEnter += new System.EventHandler(this.LinkLabel_MouseEnter);
+            this.TelicSiteLabel.MouseLeave += new System.EventHandler(this.LinkLabel_MouseLeave);
             // 
-            // pictureBox3
+            // telicBox
             // 
-            this.pictureBox3.Image = global::DataGridViewAutoFilterDemo.Properties.Resources.TS;
-            this.pictureBox3.Location = new System.Drawing.Point(749, 376);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(168, 85);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 16;
-            this.pictureBox3.TabStop = false;
+            this.telicBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.telicBox.Image = global::DataGridViewAutoFilterDemo.Properties.Resources.TS;
+            this.telicBox.Location = new System.Drawing.Point(756, 400);
+            this.telicBox.Name = "telicBox";
+            this.telicBox.Size = new System.Drawing.Size(168, 85);
+            this.telicBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.telicBox.TabIndex = 16;
+            this.telicBox.TabStop = false;
             // 
-            // pictureBox1
+            // iconBox
             // 
-            this.pictureBox1.Image = global::DataGridViewAutoFilterDemo.Properties.Resources.DataGridViewAutoFilter;
-            this.pictureBox1.Location = new System.Drawing.Point(400, 7);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(167, 144);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 14;
-            this.pictureBox1.TabStop = false;
-            // 
-            // materialLabel2
-            // 
-            this.materialLabel2.AutoSize = true;
-            this.materialLabel2.Depth = 0;
-            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 34F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel2.FontType = MaterialSkin.MaterialSkinManager.fontType.H4;
-            this.materialLabel2.Location = new System.Drawing.Point(9, 405);
-            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(336, 41);
-            this.materialLabel2.TabIndex = 13;
-            this.materialLabel2.Text = "ZUJAJ MISBAH KHAN";
-            // 
-            // materialLabel12
-            // 
-            this.materialLabel12.AutoSize = true;
-            this.materialLabel12.Depth = 0;
-            this.materialLabel12.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel12.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle1;
-            this.materialLabel12.Location = new System.Drawing.Point(91, 376);
-            this.materialLabel12.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel12.Name = "materialLabel12";
-            this.materialLabel12.Size = new System.Drawing.Size(114, 19);
-            this.materialLabel12.TabIndex = 13;
-            this.materialLabel12.Text = "DEVELOPED BY";
+            this.iconBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.iconBox.Image = global::DataGridViewAutoFilterDemo.Properties.Resources.DataGridViewAutoFilter;
+            this.iconBox.Location = new System.Drawing.Point(400, 3);
+            this.iconBox.Name = "iconBox";
+            this.iconBox.Size = new System.Drawing.Size(167, 144);
+            this.iconBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.iconBox.TabIndex = 14;
+            this.iconBox.TabStop = false;
             // 
             // materialLabel7
             // 
+            this.materialLabel7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.materialLabel7.AutoSize = true;
             this.materialLabel7.Depth = 0;
             this.materialLabel7.Font = new System.Drawing.Font("Roboto", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.materialLabel7.FontType = MaterialSkin.MaterialSkinManager.fontType.H5;
-            this.materialLabel7.Location = new System.Drawing.Point(178, 275);
+            this.materialLabel7.Location = new System.Drawing.Point(173, 268);
             this.materialLabel7.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel7.Name = "materialLabel7";
             this.materialLabel7.Size = new System.Drawing.Size(643, 29);
@@ -403,11 +412,12 @@ namespace DataGridViewAutoFilterDemo.Views
             // 
             // materialLabel11
             // 
+            this.materialLabel11.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.materialLabel11.AutoSize = true;
             this.materialLabel11.Depth = 0;
             this.materialLabel11.Font = new System.Drawing.Font("Roboto", 34F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.materialLabel11.FontType = MaterialSkin.MaterialSkinManager.fontType.H4;
-            this.materialLabel11.Location = new System.Drawing.Point(232, 165);
+            this.materialLabel11.Location = new System.Drawing.Point(232, 161);
             this.materialLabel11.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel11.Name = "materialLabel11";
             this.materialLabel11.Size = new System.Drawing.Size(545, 41);
@@ -567,8 +577,9 @@ namespace DataGridViewAutoFilterDemo.Views
             this.tabPage3.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.telicBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.personBindingSource)).EndInit();
             this.ResumeLayout(false);
 
@@ -580,7 +591,6 @@ namespace DataGridViewAutoFilterDemo.Views
         private TabPage tabPage2;
         private ImageList menuIconList;
         private TabPage tabPage3;
-        private MaterialLabel materialLabel12;
         private MaterialLabel materialLabel7;
         private MaterialLabel materialLabel11;
         private DataGridView dataGridView;
@@ -588,7 +598,7 @@ namespace DataGridViewAutoFilterDemo.Views
         private StatusStrip statusStrip1;
         private ToolStripStatusLabel FilterStatusLabel;
         private ToolStripStatusLabel ShowAllLabel;
-        private PictureBox pictureBox1;
+        private PictureBox iconBox;
         private MetroFramework.Controls.MetroGrid metroGrid;
         private StatusStrip statusStrip2;
         private ToolStripStatusLabel MetroFilterStatusLabel;
@@ -605,10 +615,11 @@ namespace DataGridViewAutoFilterDemo.Views
         private DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn salaryColumn;
         private DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn rateColumn;
         private DataGridViewAutoFilter.DataGridViewAutoFilterTextBoxColumn dateTimeColumn;
-        private MaterialLabel materialLabel2;
-        private MaterialLabel LinkLabel;
-        private PictureBox pictureBox3;
+        private MaterialLabel TelicSiteLabel;
+        private PictureBox telicBox;
         private MaterialLabel VersionLabel;
         private Panel panel1;
+        private MaterialLabel GitSiteLabel;
+        private PictureBox pictureBox1;
     }
 }

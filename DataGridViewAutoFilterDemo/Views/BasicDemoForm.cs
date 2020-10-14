@@ -17,6 +17,8 @@ namespace DataGridViewAutoFilterDemo.Views
         }
         private void BasicDemoForm_Load(object sender, EventArgs e)
         {
+            // Invoke the method PopulateList using the person object 
+            // Pass the personList as the parameter.
             personObject.PopulateList(personList);
 
             // Use morelinq ToDataTable extension for converting personList to DataTable.

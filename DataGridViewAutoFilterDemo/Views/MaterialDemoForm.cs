@@ -73,19 +73,7 @@ namespace DataGridViewAutoFilterDemo.Views
             rateColumn.FilteringEnabled = value;
             dateTimeColumn.FilteringEnabled = value;
         }
-        private void LinkLabel_Click(object sender, EventArgs e)
-        {
-            Process.Start("https://telicsolutions.com/");
-        }
-        private void LinkLabel_MouseEnter(object sender, EventArgs e)
-        {
-            Cursor = Cursors.Hand;
-        }
-        private void LinkLabel_MouseLeave(object sender, EventArgs e)
-        {
-            Cursor = Cursors.Default;
-        }
-
+      
         #region DataGridView Methods
         private void ShowAllLabel_Click(object sender, EventArgs e)
         {
@@ -152,5 +140,31 @@ namespace DataGridViewAutoFilterDemo.Views
         }
         #endregion
 
+        private void LinkLabel_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://telicsolutions.com/");
+        }
+        private void LinkLabel_MouseEnter(object sender, EventArgs e)
+        {
+            Cursor = Cursors.Hand;
+        }
+        private void LinkLabel_MouseLeave(object sender, EventArgs e)
+        {
+            Cursor = Cursors.Default;
+        }
+
+        private void GitLabel_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://github.com/telic-solutions/DataGridViewAutoFilterDemo");
+        }
+        private void GitLabel_MouseEnter(object sender, EventArgs e)
+        {
+            Cursor = Cursors.Hand;
+        }
+
+        private void GitLabel_MouseLeave(object sender, EventArgs e)
+        {
+            Cursor = Cursors.Default;
+        }
     }
 }
